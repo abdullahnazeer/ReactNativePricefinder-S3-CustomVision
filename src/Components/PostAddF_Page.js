@@ -83,6 +83,26 @@ export default class PostAddF_Page extends Component {
                             },
                             body: { "Url": "\"" + urlreturn + "\"" }
                         };
+                    
+                        //fetch Method 1
+                    
+                        // fetch('https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/27eda967-91e9-4e4f-97f0-25d528ba6aa5/detect/iterations/CrackedScreen/url', {
+                        //     method: 'POST',
+                        //     headers: {
+                        //         "Content-Type": "application/json",
+                        //         "Prediction-Key": "7cd828af44cd4996a09877e9daea9422"
+                        //     },
+                        //     body: { "Url": "\"" + urlreturn + "\"" }
+
+                        // }).then((response) => response.json())
+
+                        //     .then((response) => {
+                        //         console.log(response);
+                        //     }).catch(error => {
+                        //         console.log(error)
+                        //     });
+                    
+                        //Method initially used during NodeBackend Implementation
 
                         var uri = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/27eda967-91e9-4e4f-97f0-25d528ba6aa5/detect/iterations/CrackedScreen/url";
 
